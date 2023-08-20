@@ -5,7 +5,7 @@ import { SocialIcon } from 'react-social-icons';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
-import './Topbar.scss';
+// import './Topbar.scss';
 
 type Props = {};
 

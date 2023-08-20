@@ -18,7 +18,7 @@ const Home: NextPage = () => {
   return (
     <>
     <div className='app'>
-      <TopBar/>
+      {/* <TopBar/> */}
 
       <NavBar/> 
 {/*       
