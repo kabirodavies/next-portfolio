@@ -11,7 +11,7 @@ type Props = {};
 
 export default function TopBar({}: Props) {
   return (
-    <header className='sticky top-0 p-5 flex items-strat justify-between z-20 xl:items-center'>
+    <header className='sticky top-0 p-5 flex items-strat justify-between z-20 xl:items-center bg-[#353738]'> 
       <motion.div
         initial={{ x: -500, opacity: 0, scale: 0.5 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
