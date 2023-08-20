@@ -1,0 +1,15 @@
+
+
+.social-icon-wrapper {
+    position: relative;
+  
+    .social-icon {
+      transition: transform 0.3s ease;
+  
+      &:hover {
+        transform: scale(1.1); 
+        fill: #007bff;
+      }
+    }
+  }
+  

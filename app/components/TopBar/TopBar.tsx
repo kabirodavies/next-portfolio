@@ -5,11 +5,11 @@ import { SocialIcon } from 'react-social-icons';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
-// import './Topbar.scss';
+import './TopBar.scss';
 
 type Props = {};
 
-export default function Header({}: Props) {
+export default function TopBar({}: Props) {
   return (
     <header className='sticky top-0 p-5 flex items-strat justify-between z-20 xl:items-center'>
       <motion.div

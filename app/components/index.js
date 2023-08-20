@@ -1,5 +1,6 @@
+export { default as TopBar } from './TopBar/TopBar';
 export { default as NavBar } from './NavBar/NavBar';
-export { default as TopBar } from './TopBar/TobBar';
+
 
 
 // export { default as NavigationDots } from './NavigationDots';
