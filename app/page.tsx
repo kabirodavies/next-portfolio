@@ -46,10 +46,6 @@ const Home: NextPage = () => {
         <Blog />
       </section>
 
-      <section id="contact" className=''>
-        <Contact />
-      </section>
-
       {/* <section id="footer" className=''>
         <Footer />
       </section> */}
