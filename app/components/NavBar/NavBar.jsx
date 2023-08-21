@@ -20,7 +20,7 @@ export const navData = [
   { name: 'skill', path: '#skill', icon: <HiRectangleGroup /> },
   { name: 'testimonial', path: '#testimonial', icon: <HiChatBubbleBottomCenterText /> },
   { name: 'blog', path: '#blog', icon: <HiNewspaper /> },
-  { name: 'contact', path: '#footer', icon: <HiEnvelope /> },
+  { name: 'contact', path: '#contact', icon: <HiEnvelope /> },
 ];
 
 const NavBar = () => {

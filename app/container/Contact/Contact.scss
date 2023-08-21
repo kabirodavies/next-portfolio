@@ -1,0 +1,270 @@
+// .app__contact {
+//     flex: 1;
+//     width: 100%;
+//     flex-direction: column;
+// }
+
+// .app__contact-container {
+//     width: 80%;
+//     border-radius: 15px;
+//     overflow: hidden;
+//     padding: 10px;
+//     display: flex;
+//     // background-color: white;
+//     backdrop-filter: blur(25px);
+//     border: 1px solid rgba(12, 4, 4, 0.952); 
+
+//     margin: 4rem 2rem 2rem;
+
+//     .contact-info {
+//         background-color: rgb(103, 172, 204);
+//         border-radius: 15px;
+//         flex: 0 1 40%;
+//         padding: 40px;
+//         color: white;
+//         display: flex;
+//         flex-direction: column;
+
+//         h4 {
+//             font-size: 2rem;
+//             font-weight: 300;       
+//             margin-top: 0;
+//         }
+
+//         p {
+//             color: rgba(255,255,255,.7);
+//             font-size: 1.2rem;
+//             font-weight: 300;
+//             margin-bottom: 2rem;
+//         }
+
+//         .icon-text {
+//             display: flex;
+//             align-items: center;
+
+//             justify-content: flex-start;
+//             margin-bottom: 2rem;
+//           }
+          
+//           .icon {
+//             margin-right: 5px;
+//             // color: rgba(10, 45, 161, 0.479);
+//           }
+          
+//           .social-media {
+//             display: flex;
+//             width: 50%;
+//             gap: 10px;
+    
+
+//             .social-icon {
+//                 transition: transform 0.2s, filter 0.2s;
+                
+//                 flex: 0 1 40px;
+//                 display: flex;
+//                 justify-content: center;
+//                 align-items: center;
+//                 width: 25px; 
+//                 height: 25px; 
+//                 border-radius: 50%;
+//                 background: rgba(10, 45, 161, 0.479);
+//                 cursor: pointer;
+//               }
+
+//               .social-icon:hover {
+//                 transform: scale(1.2); 
+//               }
+//           }
+
+//     }
+//     form {
+//         padding: 40px;
+        
+//         .col {
+//             display: flex;
+//             width: 100%;
+//             flex: 0 0 100%;
+//         }
+//         .form-group {
+//             display: flex;
+//             justify-content: flex-start;
+//             flex-direction: column;
+//             flex: 0 1 100%;
+//             padding-right: 40px;
+            
+//             label {
+//                 font-size: .9;
+//                 color: white;
+//                 margin-bottom: 1rem;
+//             }
+//             input[type="text"] {
+//                 // background: rgba(255,255,255.5);
+//                 border: none;
+//                 cursor: pointer;
+//                 padding: 10px;
+//                 font-size: 1.5rem;
+//                 font-weight: 300;
+//                 color: white;
+//                 background: transparent;
+//                 border-bottom: 2px solid rgba(255,255,255, 0.4);
+//                 &:focus {
+
+//                     border: none;
+//                     outline: none;
+//                     border-bottom: 2px solid #05f7ff;
+//                 }
+//             }
+//             &:nth-child(2) {
+//                 padding-right: 0;
+//             }
+//         }
+
+//     }
+
+// }
+
+/* Add any global styles here */
+/* Add any global styles here */
+
+.app__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .app__contact-container {
+    width: 80%;
+    max-width: 1200px; /* Adjust the maximum width based on your preference */
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 20px; /* Reduce padding for better spacing */
+    display: flex;
+    flex-direction: row; /* Display contact info and form side by side */
+    background-color: rgba(255, 255, 255, 0.9); /* Use an opaque background color */
+    border: 1px solid rgba(12, 4, 4, 0.952);
+    margin: 4rem 2rem 2rem;
+    backdrop-filter: blur(25px);
+  
+    /* Apply different styles for larger screens */
+    @media screen and (max-width: 768px) {
+      flex-direction: column; /* Stack the sections on small screens */
+    }
+  }
+  
+  .contact-info {
+    flex: 1; /* Make the contact-info section take up the available width */
+    background-color: rgb(103, 172, 204);
+    border-radius: 15px;
+    padding: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Add some vertical spacing between contact info items */
+  
+    h4 {
+      font-size: 2rem;
+      font-weight: 300;
+      margin-top: 0;
+    }
+  
+    p {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 1.2rem;
+      font-weight: 300;
+      margin-bottom: 2rem;
+    }
+  
+    .icon-text {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem; /* Reduce margin between icon-text items */
+    }
+  
+    .icon {
+      margin-right: 5px;
+    }
+  
+    .social-media {
+      display: flex;
+      gap: 10px;
+    }
+  
+    .social-icon {
+      transition: transform 0.2s, filter 0.2s;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: rgba(10, 45, 161, 0.8);
+      cursor: pointer;
+    }
+  
+    .social-icon:hover {
+      transform: scale(1.2);
+    }
+  }
+  
+  form {
+    /* Make the form section slightly bigger than the other section */
+    flex: 1.2;
+    padding: 20px; /* Reduce form padding for better spacing */
+    display: flex;
+    flex-direction: column;
+    display: none; /* Hide the form section by default */
+  
+    /* Show the form section on larger screens */
+    @media screen and (min-width: 769px) {
+      display: flex;
+    }
+  }
+  
+  .col {
+    display: flex;
+    flex-wrap: wrap; /* Allow form elements to wrap on smaller screens */
+    gap: 20px; /* Add horizontal spacing between form elements */
+  }
+  
+  .form-group {
+    flex: 1; /* Allow form groups to grow and fill the available space */
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+  
+    label {
+      font-size: 0.9rem; /* Add unit (e.g., px or rem) to font-size */
+      color: black; /* Use a readable color for labels */
+      margin-bottom: 0.5rem; /* Reduce margin between labels and inputs */
+    }
+  
+    input[type="text"], input[type="tel"], input[type="email"] {
+      width: 100%;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      font-size: 1rem;
+      font-weight: 300;
+      color: black; /* Use a readable color for text */
+      background: transparent;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.4); /* Use a readable color for border */
+      transition: all .3s ease-in-out; /* Add the transition property for smooth effect */
+      margin-bottom: 2rem;
+      &:hover, /* Apply the same effect on hover */
+      &:focus {
+        border: none;
+        outline: none;
+        border-bottom: 2px solid #05f7ff; 
+      }
+    }
+    .radio{
+        display: flex;
+        justify-content: flex-start;
+
+        .radio-button {
+            margin-right: 20px;
+        }
+
+        label{
+            font-size: .8rem;
+        }
+    }
+  }
+  

@@ -7,7 +7,7 @@ import Image from 'next/image'
 import { images } from './constants';
 
 // import { About, Skills, Testimonial, Work, Header, Footer, Contact } from './container';
-import { Header, About } from './container';
+import { Header, About, Work, Skills, Testimonial, Blog, Footer, Contact} from './container';
 
 import { TopBar, NavBar } from './components';
 
@@ -29,11 +29,6 @@ const Home: NextPage = () => {
         <About />
       </section>
 
-        {/*
-      <section id="about" className=''>
-        <About />
-      </section>
-
       <section id="work" className=''>
         <Work />  
       </section>
@@ -46,13 +41,21 @@ const Home: NextPage = () => {
         <Testimonial />
       </section>
 
-      <section id="footer" className=''>
+      <section id="blog" className=''>
+        <Blog />
+      </section>
+
+      <section id="contact" className=''>
+        <Contact />
+      </section>
+
+      {/* <section id="footer" className=''>
         <Footer />
       </section> */}
 
         <Link href={'#home'} >
           <footer className='sticky bottom-5 w-full cursor-pointer'>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center '>
               <Image
                 className='h-10 w-10 rounded-full filter grayscale hover:grayscale-0 
             cursor-pointer bg-black hover:bg-[#313BAC]'
