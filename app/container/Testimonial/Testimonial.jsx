@@ -41,7 +41,6 @@ const Testimonial = () => {
 
   return (
     <>
-     <h2 className='head-text'>Testimonial Placeholder </h2>
       { testimonials.length > 0 && (
         <>
         <div className='app__testimonial-item app__flex'>
