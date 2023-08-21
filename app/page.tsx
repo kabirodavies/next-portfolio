@@ -6,7 +6,6 @@ import Image from 'next/image'
 
 import { images } from './constants';
 
-// import { About, Skills, Testimonial, Work, Header, Footer, Contact } from './container';
 import { Header, About, Work, Skills, Testimonial, Blog, Footer, Contact} from './container';
 
 import { TopBar, NavBar } from './components';
@@ -29,6 +28,7 @@ const Home: NextPage = () => {
         <About />
       </section>
 
+{/* 
       <section id="work" className=''>
         <Work />  
       </section>
@@ -40,6 +40,7 @@ const Home: NextPage = () => {
       <section id="testimonial" className=''>
         <Testimonial />
       </section>
+ */}
 
       <section id="blog" className=''>
         <Blog />
