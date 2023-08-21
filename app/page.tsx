@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 import { images } from './constants';
 
-import { Header, About} from './container';
+import { Header, About, Work, Testimonial} from './container';
 
 import { TopBar, NavBar } from './components';
 
@@ -28,19 +28,19 @@ const Home: NextPage = () => {
         <About />
       </section>
 
-{/* 
+
       <section id="work" className=''>
         <Work />  
       </section>
 
-      <section id="skill" className=''>
+      {/* <section id="skill" className=''>
         <Skills />
-      </section>
+      </section> */}
 
       <section id="testimonial" className=''>
         <Testimonial />
       </section>
- */}
+
 
       {/* <section id="blog" className=''>
         <Blog />
