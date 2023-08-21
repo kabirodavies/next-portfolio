@@ -46,14 +46,14 @@ function Header () {
 
 
       
-        <h1 className='text-2xl sm:text-7xl font-bold text-white'>
+        <h1 className='text-2xl lg:text-6xl font-bold text-white'>
         <span className='mr-3'>{text}</span>
         <Cursor cursorColor='#F7AB0A' />
         </h1>
         {/* <h2 className='text-2xl sm:text-5xl font-bold text-white mt-6'>
             Data Scientist
         </h2> */}
-        <p className='app__header-text p-text'>
+        <p className='app__header-text'>
         I am a technologist, passionate about leveraging cutting-edge solutions 
         to create innovative and impactful experiences.
         </p>

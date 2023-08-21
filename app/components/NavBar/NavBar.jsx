@@ -64,7 +64,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <nav className='app__nav'>
+    <nav className='app__nav '>
       <div className='app__nav-icons'>
         {navData.map((link, index) => {
           const isActive = activeLink === link.path;
