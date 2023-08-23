@@ -4,8 +4,9 @@ import React, { useEffect, useState } from 'react';
 import CountUp from 'react-countup';// counter
 
 // icons
-import { FaHtml5, FaCss3, FaJs, FaReact, FaWordpress, FaFigma } from 'react-icons/fa';
-import { SiNextdotjs, SiFramer, SiAdobexd, SiAdobephotoshop } from 'react-icons/si';
+import { FaHtml5, FaCss3, FaNextjs, FaReact, FaWordpress, FaFigma, FaAws } from 'react-icons/fa';
+import { SiJavascript, SiFramer, SiAdobexd, SiAdobephotoshop, 
+  SiPython, SiScikitlearn, SiScipy, SiTensorflow, SiPowerbi } from 'react-icons/si';
 
 
 import { AppWrap, MotionWrap } from '../../wrapper';
@@ -17,13 +18,23 @@ const aboutData = [
     title: 'skills',
     info: [
       {
+        title: 'Data Science',
+        icons: [
+          <SiPython />,
+          <SiScikitlearn />,
+          <SiScipy />,
+          <SiTensorflow />,
+          <SiPowerbi />,
+          <FaAws />,
+        ],
+      },
+      {
         title: 'Web Development',
         icons: [
           <FaHtml5 />,
           <FaCss3 />,
-          <FaJs />,
+          <SiJavascript />,
           <FaReact />,
-          <SiNextdotjs />,
           <SiFramer />,
           <FaWordpress />,
         ],
@@ -35,15 +46,15 @@ const aboutData = [
     ],
   },
   {
-    title: 'awards',
+    title: 'certifications',
     info: [
       {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
+        title: 'AWS Cloud Practitioner - Honoree',
+        stage: '2022',
       },
       {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
+        title: 'Spark and Python for Big Data with Pyspark - Udemy',
+        stage: '2022',
       },
     ],
   },
@@ -51,33 +62,35 @@ const aboutData = [
     title: 'experience',
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
+        title: 'Data Scientist - Code for Africa',
+        stage: '2023 - Date',
       },
       {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
+        title: 'Data Scientist- UpWork',
+        stage: 'Aug 2022 - Date',
       },
       {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
+        title: 'Junior Data Scientist - ExploreAI',
+        stage: 'Mar 2022 - Novr 2023',
       },
+      {
+        title: 'Systems Administrator - Loreto Insitite',
+        stage: '2016 - 2022',
+      },
+
+      
     ],
   },
   {
     title: 'credentials',
     info: [
       {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
+        title: 'Data Science - ExploreAI Academy',
+        stage: '2021',
       },
       {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
-      },
-      {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
+        title: 'Bsc information Technology- Meru University of Science and Technology',
+        stage: '2016',
       },
     ],
   },

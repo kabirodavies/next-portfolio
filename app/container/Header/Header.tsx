@@ -60,14 +60,16 @@ function Header () {
         I am a technologist, passionate about leveraging cutting-edge solutions 
         to create innovative and impactful experiences.
         </p>
-        <div>        
-          <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#4c4f70]
-           hover:border-[#4c4f70]'>
-            View Work
-            <span className='group-hover:rotate-90 duration-300'>
-              <HiArrowNarrowRight className='ml-3' />
-            </span>
-          </button>
+        <div>
+          <a href="#work">
+            <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#4c4f70]
+              hover:border-[#4c4f70]'>
+                View Work
+                <span className='group-hover:rotate-90 duration-300'>
+                  <HiArrowNarrowRight className='ml-3' />
+                </span>
+            </button>
+          </a>
         </div>
       </div>
     </div>
