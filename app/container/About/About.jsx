@@ -161,13 +161,15 @@ const About = () => {
             <div className='flex gap-x-4 lg:gap-x-8 mx-auto lg:mx-0 mb-4'>
               {aboutData.map((item, itemIndex)=> {
                 return (
-                  <div key={itemIndex}
+                  <div 
+                    key={itemIndex}
                     className={`${
-                      index === itemIndex &&
+                      index === itemIndex && 
                       'text-[#313BAC] after:w-[100%] after:bg-[#313BAC] after:transition-all after:duration-300' 
                        } cursor-pointer capitalize lg:text-lg relative after:w-8
-                        after:h-[2px]  after:absolute after:bottom-1 after:left-0` }
-                        onClick={()=> setIndex(itemIndex)}>
+                        after:h-[2px]  after:absolute after:bottom-1 after:left-0`}
+                        onClick={()=> setIndex(itemIndex)}
+                        >
                           {item.title}
                     </div>
                     );
