@@ -149,7 +149,7 @@ const About = () => {
 
               <div className='flex flex-1 lg:gap-x-6'>
 
-                {/* experience */}
+                 {/* experience */}
                 <div className='relative flex-1 after:w-[1px] after:h-full
                 after:bg-white/10 after:absolute after:top-10 after:right-0'>
                   <div className='text-2xl lg:text-4xl font-extrabold text-[#313bac]'>
@@ -160,19 +160,7 @@ const About = () => {
                   </div>
                 </div>
 
-                {/* experience */}
-                <div 
-                  className='relative flex-1 after:w-[1px] after:h-full 
-                  after:bg-white/10 after:absolute after:top-10 after:right-0'>
-                    <div className='text-2xl lg:text-4xl font-extrabold text-[#313bac]'>
-                      <CountUp start={0} end={50} duration={5} /> +
-                    </div>
-                    <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]' >
-                      Statisfied Clients
-                    </div>
-                  </div>
-
-                {/* experience */}
+                {/* certifications */}
                 <div 
                   className='relative flex-1 after:w-[1px] after:h-full 
                   after:bg-white/10 after:absolute after:top-10 after:right-0'>
@@ -184,7 +172,7 @@ const About = () => {
                     </div>
                   </div>                             
 
-                {/* experience */}
+                {/* certifications */}
                 <div 
                   className='relative flex-1 after:w-[1px] after:h-full 
                   after:bg-white/10 after:absolute after:top-10 after:right-0'>
@@ -194,52 +182,26 @@ const About = () => {
                     <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]' >
                       Certifications
                     </div>
-                  </div>  
+                  </div> 
+
+                {/* certifications */}
+                <div 
+                  className='relative flex-1 after:w-[1px] after:h-full 
+                  after:bg-white/10 after:absolute after:top-10 after:right-0'>
+                    <div className='text-2xl lg:text-4xl font-extrabold text-[#313bac]'>
+                      <CountUp start={0} end={10} duration={5} /> +
+                    </div>
+                    <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]' >
+                      Certifications
+                    </div>
+                  </div> 
 
               </div>
+
             </motion.div>
           </div>
-          {/* info */}
-          <motion.div
-            variants={fadeIn('left', 0.4)} 
-            initial="hidden" 
-            animate="show" 
-            exit="hidden"            
-            className='flex flex-col w-full lg:max-w-[48%] h-[480px]'>
-          <div className='flex gap-x-4 lg:gap-x-8 mx-auto lg:mx-0 mb-4'>
-            {aboutData.map((item, itemIndex) => (
-              <div
-                key={itemIndex} // Added key here
-                className={`${
-                  index === itemIndex &&
-                  'text-[#313BAC] after:w-[100%] after:bg-[#313BAC] after:transition-all after:duration-300'
-                } cursor-pointer capitalize lg:text-lg relative after:w-8
-                after:h-[2px]  after:absolute after:bottom-1 after:left-0`}
-                onClick={() => setIndex(itemIndex)}
-              >
-                {item.title}
-              </div>
-            ))}
-          </div>
-          
-          <div className='py-2 lg:py-6 flex flex-col gap-y-2 lg:gap-y-4 items-center lg:items-start '>
-            {aboutData[index].info.map((item, itemIndex) => (
-              <div key={itemIndex} className='flex-1 flex flex-col md:flex-row max-w max gap-x-2 items-center text-gray-600'>
-                {/* title */}
-                <div className='font-light mb-2 md:mb-0'>{item.title}</div>
-                <div className='hidden md:flex'>-</div>
-                <div>{item.stage}</div>
 
-                {/* icons */}
-                <div className='flex gap-x-4'>
-                  {item.icons?.map((icon, iconIndex) => (
-                    <div key={iconIndex} className='text-2xl text-gray-600'>{icon}</div>
-                  ))}
-                </div>
-              </div>
-            ))}
-            </div>
-          </motion.div>
+
         </div>
       </div>
     </>
