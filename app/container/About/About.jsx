@@ -2,9 +2,16 @@
 import React, { useEffect, useState } from 'react';
 import CountUp from 'react-countup';// counter
 
+// icons
+import { FaHtml5, FaCss3, FaJs, FaReact, FaWordpress, FaFigma } from 'react-icons/fa';
+import { SiNextdotjs, SiFramer, SiAdobexd, SiAdobephotoshop } from 'react-icons/si';
+
 
 import { AppWrap, MotionWrap } from '../../wrapper';
 import './About.scss';
+
+// data
+
 
 
 const About = () => {
@@ -75,12 +82,17 @@ const About = () => {
                       Certifications
                     </div>
                   </div>  
-
               </div>
+            </div>
+          </div>
+
+          {/* info */}
+          <div className='flex flex-col w-full lg:max-w-[48%] h-[480px]'>
+            <div className='flex gap-x-4 lg:gap-x-8 mx-auto lg:mx-0 mb-4'>
 
             </div>
-
           </div>
+
         </div>
       </div>
     </>
