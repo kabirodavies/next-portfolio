@@ -17,7 +17,7 @@ export const navData = [
   { name: 'home', path: '#home', icon: <HiHome /> },
   { name: 'about', path: '#about', icon: <HiUser /> },
   { name: 'work', path: '#work', icon: <HiViewColumns /> },
-  { name: 'skill', path: '#skill', icon: <HiRectangleGroup /> },
+  { name: 'services', path: '#services', icon: <HiRectangleGroup /> },
   { name: 'testimonial', path: '#testimonial', icon: <HiChatBubbleBottomCenterText /> },
   { name: 'blog', path: '#blog', icon: <HiNewspaper /> },
   { name: 'contact', path: '#contact', icon: <HiEnvelope /> },
