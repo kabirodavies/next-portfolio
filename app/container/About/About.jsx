@@ -1,5 +1,6 @@
 'use client';
 import React, { useEffect, useState } from 'react';
+import CountUp from 'react-countup';// counter
 
 
 import { AppWrap, MotionWrap } from '../../wrapper';
@@ -26,8 +27,60 @@ const About = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, 
                 consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
-          </div>
 
+            {/* counters */}
+            <div className='hidden md:flex md:max-w-xl lg:max-w-none mx-auto lg:mx-0 mb-8 '>
+              <div className='flex flex-1 lg:gap-x-6'>
+
+                {/* experience */}
+                <div className='relative flex-1 after:w-[1px] after:h-full
+                after:bg-white/10 after:absolute after:top-10 after:right-0'>
+                  <div className='text-2xl lg:text-4xl font-extrabold text-[#313bac]'>
+                    <CountUp start={0} end={6} duration={5} /> +
+                  </div>
+                  <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]' >
+                    Years of experience
+                  </div>
+                </div>
+
+                {/* experience */}
+                <div className='relative flex-1 after:w-[1px] after:h-full 
+                  after:bg-white/10 after:absolute after:top-10 after:right-0'>
+                    <div className='text-2xl lg:text-4xl font-extrabold text-[#313bac]'>
+                      <CountUp start={0} end={30} duration={5} /> +
+                    </div>
+                    <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]' >
+                      Statisfied Clients
+                    </div>
+                  </div>
+
+                {/* experience */}
+                <div className='relative flex-1 after:w-[1px] after:h-full 
+                  after:bg-white/10 after:absolute after:top-10 after:right-0'>
+                    <div className='text-2xl lg:text-4xl font-extrabold text-[#313bac]'>
+                      <CountUp start={0} end={10} duration={5} /> +
+                    </div>
+                    <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]' >
+                      Certifications
+                    </div>
+                  </div>                             
+
+                {/* experience */}
+                <div className='relative flex-1 after:w-[1px] after:h-full 
+                  after:bg-white/10 after:absolute after:top-10 after:right-0'>
+                    <div className='text-2xl lg:text-4xl font-extrabold text-[#313bac]'>
+                      <CountUp start={0} end={10} duration={5} /> +
+                    </div>
+                    <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]' >
+                      Certifications
+                    </div>
+                  </div>  
+
+              </div>
+
+            </div>
+
+          </div>
         </div>
       </div>
     </>
