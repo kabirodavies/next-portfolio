@@ -1,9 +1,12 @@
 /* eslint-disable */
 'use client';
 import React, { useEffect, useState } from 'react';
+import Link from 'next/link';
 import CountUp from 'react-countup';// counter
 
 // icons
+import { HiArrowNarrowRight } from 'react-icons/hi';
+
 import { FaHtml5, FaCss3, FaNextjs, FaReact, FaWordpress, FaFigma, FaAws } from 'react-icons/fa';
 import { SiJavascript, SiFramer, SiAdobexd, SiAdobephotoshop, 
   SiPython, SiScikitlearn, SiScipy, SiTensorflow, SiPowerbi } from 'react-icons/si';
@@ -82,7 +85,7 @@ const aboutData = [
     ],
   },
   {
-    title: 'credentials',
+    title: 'education',
     info: [
       {
         title: 'Data Science - ExploreAI Academy',
@@ -115,8 +118,8 @@ const About = () => {
             </h2>
 
             <p className='max-w-[500px] mx-auto lg:mx-0 mb-6 lg:mb-12 px-2 lg:px-0'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, 
-                consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Welcome to my portfolio! I am a passionate and versatile professional with a strong foundation in data science,
+            engineering, and IT. With a natural curiosity, a drive to innovate, and a knack for creative problem-solving.
             </p>
 
             {/* counters */}
@@ -134,38 +137,29 @@ const About = () => {
                   </div>
                 </div>
 
-                {/* experience */}
+                {/* certifications */}
                 <div className='relative flex-1 after:w-[1px] after:h-full 
                   after:bg-white/10 after:absolute after:top-10 after:right-0'>
                     <div className='text-2xl lg:text-4xl font-extrabold text-[#313bac]'>
-                      <CountUp start={0} end={30} duration={5} /> +
+                      <CountUp start={0} end={10} duration={5} /> +
+                    </div>
+                    <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]' >
+                      Certifications
+                    </div>
+                  </div> 
+
+                {/* projects */}
+                <div className='relative flex-1 after:w-[1px] after:h-full 
+                  after:bg-white/10 after:absolute after:top-10 after:right-0'>
+                    <div className='text-2xl lg:text-4xl font-extrabold text-[#313bac]'>
+                      <CountUp start={0} end={15} duration={5} /> +
                     </div>
                     <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]' >
                       Statisfied Clients
                     </div>
-                  </div>
+                  </div>                            
 
-                {/* experience */}
-                <div className='relative flex-1 after:w-[1px] after:h-full 
-                  after:bg-white/10 after:absolute after:top-10 after:right-0'>
-                    <div className='text-2xl lg:text-4xl font-extrabold text-[#313bac]'>
-                      <CountUp start={0} end={10} duration={5} /> +
-                    </div>
-                    <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]' >
-                      Certifications
-                    </div>
-                  </div>                             
 
-                {/* experience */}
-                <div className='relative flex-1 after:w-[1px] after:h-full 
-                  after:bg-white/10 after:absolute after:top-10 after:right-0'>
-                    <div className='text-2xl lg:text-4xl font-extrabold text-[#313bac]'>
-                      <CountUp start={0} end={10} duration={5} /> +
-                    </div>
-                    <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]' >
-                      Certifications
-                    </div>
-                  </div>  
               </div>
             </div>
           </div>
@@ -219,6 +213,20 @@ const About = () => {
             </div>            
           </div>
         </div>
+
+          {/* <Link href="https://google.com" target="_blank">  */} 
+        <div>
+          <Link href="/Resume-Davies Njogu Kabiro.pdf" target="_blank">
+            <button className='text-white bg-[#313BAC] group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#313BAC]
+            hover:border-[#313BAC]'>
+              View Resume
+              <span className='group-hover:-rotate-45 duration-300'>
+                <HiArrowNarrowRight className='ml-3' />
+              </span>
+            </button>
+          </Link>
+        </div>
+
       </div>
     </>
   );

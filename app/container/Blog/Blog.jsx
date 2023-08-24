@@ -25,16 +25,19 @@ const About = () => {
   return (
     <>
      <h2 className='head-text'>Blog</h2>
+     <h2 className=''>Coming Soon</h2>
    
-      {/* <div className=''>
-        <a href="/blog" className="text-black group border-2 px-6 py-3 my-2 ml-4 flex items-center
-         hover:bg-[#313BAC] hover:text-white">
-          View All Posts
-          <span className="group-hover:-rotate-45 duration-300">
-            <HiArrowNarrowRight className="ml-3" />
-          </span>
-        </a>
-      </div> */}
+     <div>
+            <Link href="/blog" target="_blank">
+              <button className='text-white bg-[#313BAC] group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#313BAC]
+              hover:border-[#313BAC]'>
+                View All Posts
+                <span className='group-hover:-rotate-45 duration-300'>
+                  <HiArrowNarrowRight className='ml-3' />
+                </span>
+              </button>
+            </Link>
+          </div>
     </>
   );
 };

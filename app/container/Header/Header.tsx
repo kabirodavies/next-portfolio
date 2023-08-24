@@ -62,8 +62,8 @@ function Header () {
         </p>
         <div>
           <a href="#work">
-            <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#4c4f70]
-              hover:border-[#4c4f70]'>
+            <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#313BAC]
+              hover:border-[#313BAC]'> 
                 View Work
                 <span className='group-hover:rotate-90 duration-300'>
                   <HiArrowNarrowRight className='ml-3' />

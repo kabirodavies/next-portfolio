@@ -38,10 +38,7 @@ const Work = () => {
 
   return (
     <>
-      <h2 className='head-text'>
-        My Creative <span>Portfolio</span> Section
-      </h2>
-
+      <h2 className='head-text'>Portfolio <span>Section</span></h2>
       <motion.div
         className='app__work-filter'
         initial={{ opacity: 0, y: 20 }}
