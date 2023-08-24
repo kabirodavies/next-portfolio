@@ -214,9 +214,10 @@ const About = () => {
           </div>
         </div>
 
-          {/* <Link href="https://google.com" target="_blank">  */} 
+          {/* <Link href="/Resume-Davies Njogu Kabiro.pdf" target="_blank"> */} 
         <div>
-          <Link href="/Resume-Davies Njogu Kabiro.pdf" target="_blank">
+          
+          <Link href="https://drive.google.com/file/d/1FxREziSOji7DMmocX5aLXiun1AQFrksc/view?usp=sharing" target="_blank">
             <button className='text-white bg-[#313BAC] group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#313BAC]
             hover:border-[#313BAC]'>
               View Resume
