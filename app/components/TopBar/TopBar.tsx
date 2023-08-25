@@ -48,6 +48,14 @@ export default function TopBar({}: Props) {
             target='_blank'
             className='social-icon'
           />
+          
+          <SocialIcon
+            url='https://medium.com/@daviesnjogu'
+            fgColor='white'
+            bgColor='transparent'
+            target='_blank'
+            className='social-icon'
+          />          
 
           <SocialIcon
             url='https://twitter.com/kabirodavies'
