@@ -1,4 +1,6 @@
 "use client";
+import '../../globals.css'
+
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import {

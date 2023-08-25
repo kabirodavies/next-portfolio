@@ -9,7 +9,7 @@ type Props = {};
 
 export default function Footer({}: Props) {
   return (
-    <header className='sticky top-0 p-5 flex items-strat justify-between z-20 xl:items-center bg-[#353738]'> 
+    <footer className='sticky bottom-0 p-5 flex items-center justify-between z-20 xl:items-center bg-[#353738]'>
       <div className='flex flex-row items-center text-white max-w-7xl mx-auto'>           
         <Link href='https://kabiro.vercel.app' className=' social-icon-wrapper cursor-pointer'>
           <h1 className=' text-1xl'>
@@ -17,6 +17,6 @@ export default function Footer({}: Props) {
           </h1>
         </Link>
       </div>
-    </header>
+    </footer>
   );
 }

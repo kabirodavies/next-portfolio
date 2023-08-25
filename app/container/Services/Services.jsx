@@ -1,5 +1,6 @@
 'use client';
 import React, { useEffect, useState } from 'react';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { HiArrowNarrowRight } from 'react-icons/hi';
@@ -7,9 +8,8 @@ import { HiArrowNarrowRight } from 'react-icons/hi';
 import { images } from '@/app/constants';
 import { getAbouts } from '@/sanity/sanity-utils';
 import { AppWrap, MotionWrap } from '../../wrapper';
-
 import './Services.scss';
-import Link from 'next/link';
+
 
 const Services = () => {
   const [abouts, setAbouts] = useState([]);
@@ -29,17 +29,6 @@ const Services = () => {
         <br />
         Good <span>Business</span>
       </h2>
-{/* 
-      <div>
-        <a href="/work" className="text-black group border-2 px-6 py-3 my-2 flex items-center
-         hover:bg-[#313BAC] hover:text-white">
-          View Work
-          <span className="group-hover:-rotate-45 duration-300">
-            <HiArrowNarrowRight className="ml-3" />
-          </span>
-        </a>
-      </div> */}
-
 
       <div className='app__profiles'>
         {abouts.map((about, index) => (

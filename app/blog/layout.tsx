@@ -1,13 +1,10 @@
 import '../../app/globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import TopBar from '../components/TopBar/TopBar'
-import Footer from '../components/Footer/Footer'
 
 import Banner from '../blog/_components/Banner'
 
-
-
+import { TopBar, NavBar, Footer } from '../components';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -27,16 +24,15 @@ export default function RootLayout({
       <body 
       className={` ${inter.className}
       bg-white text-black dark:bg-gray-900 dark:selection:bg-gray-900
-      dark:text-white h-full selection:bg-gray-50 `}>
-
+      dark:text-white h-full selection:bg-gray-50 `}
+      >
         <TopBar />
-        {/* <Header /> */}
         <Banner />
         <main className='max-w-3xl mx-auto px-4 sm:px-6 lg:px-8'>
           {children}
-          </main>
+        </main>
         <Footer />
-        </body>
+      </body>
     </html>
   )
 } 

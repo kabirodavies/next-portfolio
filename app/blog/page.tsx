@@ -1,11 +1,13 @@
-import React from 'react'
+// ./nextjs-app/app/page.tsx
 
-type Props = {}
+import { SanityDocument } from "next-sanity";
+import Posts from "@/app/blog/_components/Posts";
+import { postsQuery } from "@/sanity/sanity-utils";
+import { sanityFetch } from "@/sanity/lib/sanityFetch";
 
-function page({}: Props) {
-  return (
-    <div>Blog Page</div>
-  )
+export default async function Home() {
+  const posts = await sanityFetch<SanityDocument[]>({ query: postsQuery });
+
+  return <Posts posts={posts} />;
 }
 
-export default page
