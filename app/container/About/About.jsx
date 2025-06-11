@@ -217,7 +217,7 @@ const About = () => {
           {/* <Link href="/Resume-Davies Njogu Kabiro.pdf" target="_blank"> */} 
         <div>
           
-          <Link href="https://drive.google.com/file/d/1FxREziSOji7DMmocX5aLXiun1AQFrksc/view?usp=sharing" target="_blank">
+          <Link href="https://drive.google.com/file/d/12mr3tJQciaRa_vw0l68hxN4c20BRG53a/view?usp=sharing" target="_blank">
             <button className='text-white bg-[#313BAC] group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#313BAC]
             hover:border-[#313BAC]'>
               View Resume
